@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.link_img_header {
+    text-decoration: none;
+    color: #F25822;
+
+}
+
+.header_img {
+    padding-top: 45px;
+    padding-bottom: 53px;
+
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header_text_logo {
+    color: #F25822;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header_menu {
+    padding: 51px;
+    padding-bottom: 60px;
+}
+
+span {
+    color: black;
+}
+
+.header_menu {
+    color: #000;
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header_link {
+    text-decoration: none;
+
+}
+
+.header_link_1 {
+    text-decoration: none;
+    color: #F25822;
+}
+
+.header_button {
+    border-radius: 30px;
+    background: #F25822;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+.top_header_content {
+    font-family: Gilroy-Bold;
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 217px;
+
+}
+
+.top_text {
+    color: #888;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 17px;
+}
+
+.top_button {
+    margin-top: 29px;
+}
+
+.top_button {
+    margin-top: 29px;
+}
+
+.top_btr {
+    width: 140px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    color: #FFF;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-weight: 400;
+
+
+}
+
+.top_btr_play {
+    text-decoration: none;
+    color: #AAA;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.top_img {
+    margin-top: 164px;
+}
+
+.logo_img {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
