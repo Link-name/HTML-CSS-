@@ -218,7 +218,7 @@
     border: 1px solid #222;
 }
 
-@media (max-width:425px) {
+@media (min-width:320px) and (max-width:767px){
     .center {
         padding-left: calc(50% - 187px);
         padding-right: calc(50% - 187px);
