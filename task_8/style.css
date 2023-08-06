@@ -1,0 +1,32 @@
+* {
+    text-decoration: none;
+}
+
+.munu__link:hover {
+    color: brown;
+}
+
+.munu__link:active {
+    color: green;
+}
+
+.links:first-child .munu__link {
+    text-decoration: underline;
+}
+
+.links:last-child .munu__link {
+    font-weight: bold;
+}
+
+.links:nth-child(3) .munu__link {
+    background-color: orange;
+    border: 1px solid #000;
+}
+
+.svg_img:hover path, rect {
+    fill: yellow;
+}
+
+.svg_img:active path, rect {
+    fill: purple;
+}
