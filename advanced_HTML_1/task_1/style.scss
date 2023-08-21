@@ -1,0 +1,44 @@
+@import "vars";
+@import "mixins";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contener {
+    padding-left: calc(50% - $ContenerWight / 2);
+    padding-right: calc(50% - $ContenerWight / 2);
+}
+
+.hi_scss {
+    border: 1px solid #000;
+    text-align: center;
+    color: green;
+}
+.contener {
+    width: $ContenerWight;
+}
+.name_color {
+    color: $ColorText;
+} /* создали зоголовок с розывым цветом */
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: $GapNav;
+    &__link {
+        text-decoration: none;
+        @extend %fontStyle;
+    }
+}
+.content {
+    display: flex;
+    gap: $GapNav;
+    @include contentFlex();
+    &_items {
+        width: ($ContenerWight -$GapNav * 3) / 4; /*  берем блок равен 1\4 */
+        /* width: $WightContentItems; */
+        height: 200px;
+        border: $BorderContentItems;
+    }
+}

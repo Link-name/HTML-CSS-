@@ -1,0 +1,10 @@
+@mixin contentFlex(){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+};
+%fontStyle{
+    font-family: sans-serif;
+    font-style: normal;
+}

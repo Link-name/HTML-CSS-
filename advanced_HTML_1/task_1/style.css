@@ -1,0 +1,52 @@
+@charset "UTF-8";
+.nav__link {
+  font-family: sans-serif;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contener {
+  padding-left: calc(50% - 560px);
+  padding-right: calc(50% - 560px);
+}
+
+.hi_scss {
+  border: 1px solid #000;
+  text-align: center;
+  color: green;
+}
+
+.contener {
+  width: 1120px;
+}
+
+.name_color {
+  color: #8a2be2;
+} /* создали зоголовок с розывым цветом */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.nav__link {
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.content_items {
+  width: 268px; /*  берем блок равен 1\4 */
+  /* width: $WightContentItems; */
+  height: 200px;
+  border: 1px solid #000;
+}/*# sourceMappingURL=style.css.map */
