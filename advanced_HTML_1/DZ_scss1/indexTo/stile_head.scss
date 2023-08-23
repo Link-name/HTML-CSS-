@@ -6,6 +6,9 @@ $ColorHeding2: #f16d7f;
     box-sizing: border-box;
     outline: none;
 }
+.body{
+    font-family: 'Lato', sans-serif;
+}
 .max_content {
     position: relative;
     overflow: hidden;
@@ -155,22 +158,22 @@ $ColorHeding2: #f16d7f;
         line-height: normal;
     }
 }
-main {
-    .main_slider_img {
+.main {
+    &_slider_img {
         height: 777px;
         background-color: #f7f7f7;
-        .img_women_main {
+        &_women {
             display: block;
             margin: auto;
         }
     }
-    .content_main {
+    &_content {
         border: 1px solid #eaeaea;
         width: 71.25%;
         height: 601px;
         margin: auto;
         text-align: center;
-        .main_heading_content {
+        &_heading {
             margin: auto;
             padding-top: 64px;
             padding-bottom: 20px;
@@ -180,7 +183,7 @@ main {
             font-weight: 300;
             height: 17.144px;
         }
-        .main_subject_content {
+        &_subjec {
             margin: auto;
             padding-top: 12px;
             width: 253px;
@@ -189,7 +192,7 @@ main {
             font-size: 18px;
             font-weight: 300;
         }
-        .main_text_content {
+        &_text {
             margin: auto;
             padding-top: 49px;
             width: 550px;
@@ -200,7 +203,7 @@ main {
             font-weight: 300;
             padding-bottom: 32px;
         }
-        .main_price {
+        &_price {
             margin: auto;
             color: $ColorHeding2;
             padding-bottom: 45px;
@@ -208,7 +211,8 @@ main {
             font-size: 24px;
             font-weight: 300;
         }
-        .main_butoom_Cart {
+        
+    &_butoom_Cart {
             width: 212px;
             height: 48px;
             border: 1px solid #ef5b70;
@@ -219,18 +223,19 @@ main {
             padding-left: 24px;
             margin-bottom: 64px;
 
-            .name_butoom_cart {
+        &_name {
                 padding-left: 22px;
                 color: #f26376;
                 font-family: Lato;
                 font-size: 16px;
                 font-weight: 400;
             }
+            &:active {
+                background-color: #ffcbd5;
+            }
         }
 
-        .main_butoom_Cart:active {
-            background-color: #ffcbd5;
-        }
+      
         .main_nav_menu {
             padding-top: 64px;
             padding-bottom: 48px;
@@ -243,7 +248,6 @@ main {
                 font-family: Lato;
                 font-size: 14px;
                 font-weight: 400;
-                
             }
         }
     }
