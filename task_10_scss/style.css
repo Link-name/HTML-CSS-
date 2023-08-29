@@ -1,0 +1,62 @@
+@charset "UTF-8";
+h1 {
+  font-family: "Open Sans Condensed";
+}
+
+.text {
+  font-family: "Merienda";
+}
+
+.ttt {
+  border: 1px solid #000;
+}
+
+h2 {
+  font-size: 32px;
+  color: #fff;
+  /*     -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: blue;
+  -webkit-text-stroke-width: 1px; */
+  border: 1px solid #000;
+  -webkit-text-stroke: 1px blue; /* короткая запись обводки текста */
+  /*     color: #fff;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: blue;
+  font-size: 32px;
+  border: 1px solid #000; */
+}
+
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 100px 200px 100px;
+  border-color: transparent transparent red transparent;
+}
+
+.img_framed {
+  height: 1000px;
+  background-color: #ccc;
+  /* clip-path: circle(150px at 450px 300px); */
+  -webkit-clip-path: polygon(50% 20%, 100% 50%, 50% 100%, 20% 50%);
+          clip-path: polygon(50% 20%, 100% 50%, 50% 100%, 20% 50%);
+  background-image: url(img/more-plyazh-nebo-bereg-skaly-volny-1.jpg);
+  background-size: cover;
+  /* работа с картинками через clip-path */
+}
+
+.boreder_img {
+  padding: 15px;
+  width: 50%;
+  height: 100px;
+  border-style: solid;
+  border-image-width: 30px;
+  border-image-source: url(img/more-plyazh-nebo-bereg-skaly-volny-1.jpg);
+  border-image-slice: 50;
+  border-image-repeat: round;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Рамка из img  */
+}/*# sourceMappingURL=style.css.map */

@@ -1,9 +1,17 @@
-@import 'vars';
+@import "vars";
+@import "mixsin";
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
+}
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
 }
 
 .body {
@@ -32,9 +40,6 @@
         flex-wrap: wrap;
         align-content: center;
         align-items: baseline;
-        &_glass {
-            padding-top: 28px;
-        }
     }
     &_menu_rigth {
         display: flex;
@@ -64,10 +69,10 @@
                 color: #000;
                 font-family: $site_Font;
                 font-size: 14px;
-               font-weight: 700;
+                font-weight: 700;
             }
             &_h6 {
-                color:$ColorSelectSite;
+                color: $ColorSelectSite;
                 font-family: $site_Font;
                 font-size: 14px;
                 font-weight: 400;
@@ -77,7 +82,7 @@
             &_link {
                 text-decoration: none;
                 padding-left: 53px;
-                color: #6f6e6e;
+                color: $ColorText;
                 font-family: $site_Font;
                 font-size: 14px;
                 font-weight: 400;
@@ -105,76 +110,126 @@
             font-size: 24px;
             font-weight: 400;
         }
-        &_bread_crumbs_link {
-            text-decoration: none;
-            color: #636363;
-            font-family: $site_Font;
-            font-size: 14px;
-            font-weight: 300;
-        }
-        &_bread_crumbs_lin_style {
-            color: $ColorSelectSite;
-            font-family: $site_Font;
-            font-size: 14px;
-            font-weight: 700;
-        }
     }
 }
-
 .main {
-    &_slider_img {
-        height: 777px;
-        background-color: #f7f7f7;
-        &_women {
-            display: block;
-            margin: auto;
+    padding-top: 98px;
+    height: 1748px;
+    color: #f8f3f4;
+    &__card_item {
+        display: flex;
+        justify-content: flex-start;
+        width: 652px;
+        height: 306px;
+        box-shadow: 16px 14px 20px 6px rgb(93 93 93 / 15%);
+        &__article {
+            gap: 57px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            padding: 22px 57px 62px 32px;
+            &__title {
+                color: $ColorTextHeading;
+                font-family: $site_Font;
+                font-size: 24px;
+                font-weight: 400;
+                padding-bottom: 36px;
+            }
+            &__quantity {
+                display: flex;
+                gap: 22px;
+            }
+            &__text {
+                color: $ColorText;
+                font-family: $site_Font;
+                font-size: 22px;
+                font-weight: 400;
+                &__price {
+                    color: $ColorSelectSite;
+                }
+            }
+            &__count__product {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 44px;
+                height: 24.949px;
+                border: 2px solid #eaeaea;
+                color: $ColorText;
+                font-family: $site_Font;
+                font-size: 18px;
+
+                font-weight: 400;
+            }
+        }
+        &__exit {
+            padding-top: 28px;
+            padding-right: 22px;
         }
     }
-   
 }
-.info_content_product {
-    padding-top: 57px;
-    gap: 30px;
-    grid-template-columns: repeat(3, 360px);
-    display: grid;
-    justify-content: center;
-    margin-bottom: 123px;
+.button__action__basket {
+    display: flex;
+    gap: 192px;
 
-    &_items:hover {
-        outline: 3px solid #ffd901;
-        outline-offset: -3px;
-        transform: scale(1.1);
-        z-index: 1;
-        transition: transform 0.5s;
+    &__left {
+        width: 235px;
+        height: 50px;
+        background-color: #ffffff;
+        border: 2px solid #a4a4a4;
+        &:hover {
+            background-color: $ColorSelectSite;
+        }
     }
-
-    &_name {
+    &__rigth {
+        width: 225px;
+        height: 50px;
+        background-color: #ffffff;
+        border: 2px solid #a4a4a4;
+        &:hover {
+            background-color: $ColorSelectSite;
+            color: #eaeaea;
+        }
+    }
+    &__name {
         color: #000;
-        font-family: $site_Font;
-        font-size: 13px;
-        font-weight: 400;
-    }
-
-    &_text {
-        color: #5d5d5d;
-        padding-top: 16px;
-        font-family: $site_Font;
+        font-family: Lato;
         font-size: 14px;
         font-weight: 300;
     }
-
-    &_price {
-        color: $ColorSelectSite;
-        padding-top: 16px;
+}
+.main_content_right {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    &_heading {
+        color: #222;
         font-family: $site_Font;
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 300;
     }
-
-    &_padding {
-        padding: 24px 16px;
+    &_input {
+        padding: 12px 16px;
+        width: 358.986px;
+        height: 44px;
+        border: 1px solid #a4a4a4;
+    }
+    &_button {
+        width: 101.408px;
+        height: 35px;
+        border: 1px solid #a4a4a4;
     }
 }
+
+.item2 {
+    margin-top: 40px;
+    margin-bottom: 72px;
+}
+
 .footer {
     &_mid {
         &_content {
@@ -243,7 +298,7 @@
                         border: none;
                         flex: 1;
                         &:focus {
-                            border: 1px solid #fc6f8e;
+                            border: 1px solid $ColorSelectSite;
                         }
                     }
                 }
@@ -271,7 +326,7 @@
             }
         }
         .buttom_input:hover {
-            background-image: radial-gradient(ellipse farthest-corner at 50% 50%, #fc6f8e, #44f16a);
+            background-image: radial-gradient(ellipse farthest-corner at 50% 50%, $ColorSelectSite, #44f16a);
         }
 
         &_bottom {

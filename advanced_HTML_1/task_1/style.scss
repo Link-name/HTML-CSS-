@@ -36,7 +36,7 @@
     gap: $GapNav;
     @include contentFlex();
     &_items {
-        width: ($ContenerWight -$GapNav * 3) / 4; /*  берем блок равен 1\4 */
+      /*   width: ($ContenerWight - $GapNav * 3) / 4; */ /*  берем блок равен 1\4 */
         /* width: $WightContentItems; */
         height: 200px;
         border: $BorderContentItems;
