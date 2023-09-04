@@ -548,7 +548,9 @@ input {
     border: none;
 }
 
-@media screen and (max-width: 1024px) {
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
     .info_content_product {
         grid-template-columns: repeat(2, 360px);
 
@@ -578,7 +580,9 @@ input {
     .footer_mid_content_right {
         padding: 48px;
     }
-
+    .footer_mid_content_left{
+        padding-top: 64px;
+    }
 
     .form-wrapper {
         justify-content: center;
@@ -593,8 +597,4 @@ input {
         padding: 0px 32px 0px 32px;
     }
     
-}
-
-
-@media (min-width: 768px) and (max-width: 1020px) {
 }
