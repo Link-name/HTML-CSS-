@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    counter-reset: lamp;
+    background-image: url(img.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.light_bulbds_check {
+    position: absolute;
+    visibility: hidden;
+    left: -999999px;
+    &:checked {
+        counter-increment: lamp;
+        & ~ label{
+            display: none;
+        }
+    }
+}
+
+.content-info {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    color: aqua;
+}
+.content-info::before {
+    content: counter(lamp);
+}
+
+.box {
+    position: absolute;
+    margin: 0;
+    font-size: 50px;
+    fill: yellow;
+    @for $i from 1 through 3 {
+        &_#{$i} {
+            top: random(70) + vh;
+            left: random(70) + vw;
+            animation: lamp-flashes-#{$i} 3s ease-in #{$i}s both;
+        }
+    }
+}
+@for $i from 1 through 3 {
+    @keyframes lamp-flashes-#{$i} {
+        0% {
+            opacity: 0%;
+        }
+        25% {
+            opacity: 50%;
+        }
+        50% {
+            opacity: 0%;
+        }
+
+        100% {
+            opacity: 0%;
+        }
+    }
+}

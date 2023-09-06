@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  counter-reset: lamp;
+  background-image: url(img.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.light_bulbds_check {
+  position: absolute;
+  visibility: hidden;
+  left: -999999px;
+}
+.light_bulbds_check:checked {
+  counter-increment: lamp;
+}
+.light_bulbds_check:checked ~ label {
+  display: none;
+}
+
+.content-info {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  color: aqua;
+}
+
+.content-info::before {
+  content: counter(lamp);
+}
+
+.box {
+  position: absolute;
+  margin: 0;
+  font-size: 50px;
+  fill: yellow;
+}
+.box_1 {
+  top: 44vh;
+  left: 60vw;
+  animation: lamp-flashes-1 3s ease-in 1s both;
+}
+.box_2 {
+  top: 38vh;
+  left: 32vw;
+  animation: lamp-flashes-2 3s ease-in 2s both;
+}
+.box_3 {
+  top: 22vh;
+  left: 64vw;
+  animation: lamp-flashes-3 3s ease-in 3s both;
+}
+
+@keyframes lamp-flashes-1 {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes lamp-flashes-2 {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes lamp-flashes-3 {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}/*# sourceMappingURL=style.css.map */
